@@ -5,6 +5,7 @@ price = st.number_input("กรอกราคาสินค้า (บาท):
 st.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
 net_price = price - vat
 vat = price * 0.07
+
 st.header(f"• ราคาสุทธิ: {net_price:.2f} บาท")
 st.divider()
 st.write("นางสาวพิชญาภรณ์ ทิพย์มณ๊ เลขที่ 27 ม.4/15")
