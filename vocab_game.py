@@ -9,9 +9,9 @@ if "ans1_val" not in st.session_state:
 if "ans2_val" not in st.session_state:
     st.session_state.ans2_val = ""
 if "ans3_val" not in st.session_state:
-    st.session_state.ans2_val = ""
+    st.session_state.ans3_val = ""
 if "ans4_val" not in st.session_state:
-    st.session_state.ans2_val = ""
+    st.session_state.ans4_val = ""
 
 
 def reset_game():
@@ -95,17 +95,17 @@ ans2 = st.text_input(
 )
 ans3 = st.text_input(
     "ข้อ 3: Cats love to eat `L _ p _ _ p`.💻 ",
-    value=st.session_state.ans2_val,
+    value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
     "ข้อ 4: Cats love to eat `B l _ _ b _ _ _ y`.🫐 ",
-    value=st.session_state.ans2_val,
+    value=st.session_state.ans4_val,
 )
 
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
-st.session_state.ans2_val = ans3
-st.session_state.ans2_val = ans4
+st.session_state.ans3_val = ans3
+st.session_state.ans4_val = ans4
 
 
 
@@ -118,7 +118,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
     time.sleep(1)
     st.rerun()
 
-# 5. แสดง Dialog ผลลัพธ์
+
 if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2, ans3, ans4
 )
