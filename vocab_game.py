@@ -120,7 +120,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 
 
 if st.session_state.get("is_ended", False):
-    show_result_dialog(ans1,ans2,ans3,ans4)
+    show_result_dialog()
 
 st.divider()
 st.write("นางสาวพิชญาภรณ์ ทิพย์มณ๊ เลขที่ 27 ม.4/15")
