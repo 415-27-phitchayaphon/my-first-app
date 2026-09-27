@@ -23,7 +23,7 @@ def reset_game():
     st.session_state.is_ended = False  
 
 
-def show_result_dialog(ans1, ans2):
+def show_result_dialog(ans1, ans2, ans3, ans4):
     st.balloons()
     score = 0
 
