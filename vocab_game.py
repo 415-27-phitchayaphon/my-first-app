@@ -118,9 +118,9 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
     time.sleep(1)
     st.rerun()
 
-if st.session_state.get("is_ended", False):
-     st.success("ส่งคำตอบเรียบร้อย")
+if st.session_state.get("is_ended"_, False):
+show_result_dialog(ans1, ans2, ans3, ans4)
 
 st.divider()
-st.write("นางสาวพิชญาภรณ์ ทิพย์มณ๊ เลขที่ 27 ม.4/15")
+st.write("นางสาวพิชญาภรณ์ ทิพย์มณี เลขที่ 27 ม.4/15")
 
